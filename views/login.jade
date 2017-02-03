@@ -1,0 +1,50 @@
+extends ./partials/layout
+  
+block content
+  script(type='text/javascript').
+    
+    $(document).ready(function(){
+      
+    });
+    
+  div.background-image
+  div
+  
+    div(class='jumbotron jumbotron-custom' style='background-color:rgba(238, 238, 238, 0.31)')
+      div(class='container')
+      
+        h1(class='display-3') Moeda Solidária
+        p(class='lead') Este site é uma plataforma de ......
+        hr(class='my-4')
+        p(class="lead")
+    
+    div.row
+      div(id='div_login' class='text-center')    
+        a(href='/auth/facebook')
+          button.btn.btn-lg.btn-primary(type='button' id='btn_logar_facebook') Login com Facebook
+    br    
+    div.container
+      // Example row of columns
+      .row
+        .col-lg-4
+          h2 Heading
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn.btn-secondary(href='#', role='button') View details »
+        .col-lg-4
+          h2 Heading
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn.btn-secondary(href='#', role='button') View details »
+        .col-lg-4
+          h2 Heading
+          p
+            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          p
+            a.btn.btn-secondary(href='#', role='button') View details »
+      hr
+      footer
+        p © Company 2017
+    

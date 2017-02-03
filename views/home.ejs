@@ -1,0 +1,10 @@
+
+<img src="<%= user.photos[0].value %>"/>
+<div><%= user.displayName %></div>
+
+<ul id='list_tasks'>
+
+  <% for(var i=0; i<user_tasks.length; i++) {%>
+     <li><%= user_tasks[i].task %></li>
+  <% } %>
+</ul>
