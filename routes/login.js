@@ -52,8 +52,8 @@ module.exports = function(app){
     failureRedirect: '/'
   }), function(req, res){
     // Renderiza a View enviado o usuario recuperado pela autenticacao no Facebook
-    res.redirect('/home');
-    
+    res.redirect('/login_auth_success');
+
   });
 
   app.get('/', function(req, res){
