@@ -2,7 +2,8 @@ var db = require('../db');
 
 module.exports = function(app){
 
-  app.get('/home', function(req, res){
+  app.get('/login_auth_success', function(req, res){
+
     //console.log('Carregando Home ...');
     //console.log(req.session.passport);
     //req.session.logged = true;

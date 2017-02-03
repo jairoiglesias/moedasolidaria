@@ -1,11 +1,24 @@
 <html>
 
+  <head>
 
-  <ul id='list_tasks'>
+    <% include ./partials/layout_menu %>
 
-    <% for(var i=0; i<tasks.length; i++) {%>
-       <li><%= tasks[i].task %></li>
-    <% } %>
-  </ul>
+  </head>
+
+  <body>
+
+    <div class='container'>
+      <h3>Lista de Tarefas</h3>
+      <hr />
+      <table id='table_tasks' class='table table-striped table-hover'>
+        <% for(var i=0; i<tasks.length; i++) {%>
+           <tr><td><%= tasks[i].task %></td></tr>
+        <% } %>
+      </table>
+
+    </div>
+
+  </body>
 
 </html>
